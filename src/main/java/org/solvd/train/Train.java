@@ -21,4 +21,8 @@ public class Train {
     public void setNumber(int number) {
         this.number = number;
     }
+
+    public void addCarriage(Carriage carriage) {
+        this.carriages.add(carriage);
+    }
 }

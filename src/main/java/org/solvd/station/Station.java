@@ -16,4 +16,8 @@ public class Station {
         this.city = city;
         neighbors = new ArrayList<Station>();
     }
+
+    public String getAddress() {
+        return address;
+    }
 }
