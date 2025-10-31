@@ -24,6 +24,16 @@ public class Carriage {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Carriage{" +
+                "id=" + id +
+                ", quantityOfSeats=" + quantityOfSeats +
+                ", seats=" + seats +
+                ", reservedSeats=" + reservedSeats +
+                '}';
+    }
+
     public void changeSeatName(int seatNumber, String newName) {
         this.seats.put(seatNumber, newName);
     }

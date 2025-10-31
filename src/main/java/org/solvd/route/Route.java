@@ -20,6 +20,13 @@ public class Route {
         return stations;
     }
 
+    @Override
+    public String toString() {
+        return "Route{" +
+                "stations=" + stations +
+                '}';
+    }
+
     public void printRoute() {
         System.out.println("Route: ");
         for (Station station : stations) {

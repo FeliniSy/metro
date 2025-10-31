@@ -1,0 +1,21 @@
+{
+  "train": {
+    "number": 404,
+    "carriages": [
+      {"id": 1, "quantityOfSeats": 20},
+      {"id": 2, "quantityOfSeats": 30}
+    ]
+  },
+  "route": {
+    "stations": [
+      {"id": 1, "city": "Kutaisi", "address": "Rioni"},
+      {"id": 2, "city": "Tbilisi", "address": "Didube"}
+    ]
+  },
+  "passenger": {
+    "id": 201,
+    "fromStation": "Rioni",
+    "toStation": "Didube",
+    "ticket": "ONETIME"
+  }
+}

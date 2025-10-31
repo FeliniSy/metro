@@ -17,6 +17,16 @@ public class Passenger {
         this.hasticket = false;
     }
 
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "passengerId=" + passengerId +
+                ", hasticket=" + hasticket +
+                ", fromStation=" + fromStation +
+                ", toStation=" + toStation +
+                '}';
+    }
+
     public Station getFromStation() {
         return fromStation;
     }

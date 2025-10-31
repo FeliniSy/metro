@@ -18,4 +18,12 @@ public class Stuff {
         this.name = name;
         this.state = state;
     }
+
+    @Override
+    public String toString() {
+        return "Stuff{" +
+                "name='" + name + '\'' +
+                ", state=" + state +
+                '}';
+    }
 }

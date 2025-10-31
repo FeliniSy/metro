@@ -22,6 +22,14 @@ public class Train {
         this.number = number;
     }
 
+    @Override
+    public String toString() {
+        return "Train{" +
+                "number=" + number +
+                ", carriages=" + carriages +
+                '}';
+    }
+
     public void addCarriage(Carriage carriage) {
         this.carriages.add(carriage);
     }

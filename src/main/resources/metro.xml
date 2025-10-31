@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetroSystem>
+    <Train number="404">
+        <Carriages>
+            <Carriage id="1">
+                <Seats quantity="20" type="2nd class"/>
+            </Carriage>
+            <Carriage id="2">
+                <Seats quantity="30" type="2nd class"/>
+            </Carriage>
+        </Carriages>
+    </Train>
+
+    <Route>
+        <Station id="1" city="Kutaisi" address="Rioni"/>
+        <Station id="2" city="Tbilisi" address="Didube"/>
+    </Route>
+
+    <Passenger id="201">
+        <FromStation>Rioni</FromStation>
+        <ToStation>Didube</ToStation>
+        <Ticket type="ONETIME"/>
+    </Passenger>
+</MetroSystem>

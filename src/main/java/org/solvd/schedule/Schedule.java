@@ -35,4 +35,17 @@ public class Schedule {
     public Route getRoute() {
         return route;
     }
+
+    @Override
+    public String toString() {
+        return "Schedule{" +
+                "startTime=" + startTime +
+                ", endTime=" + endTime +
+                ", startStation=" + startStation +
+                ", endStation=" + endStation +
+                ", duration=" + duration +
+                ", train=" + train +
+                ", route=" + route +
+                '}';
+    }
 }

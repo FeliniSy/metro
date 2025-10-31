@@ -17,6 +17,16 @@ public class Station {
         neighbors = new ArrayList<Station>();
     }
 
+    @Override
+    public String toString() {
+        return "Station{" +
+                "id=" + id +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", neighbors=" + neighbors +
+                '}';
+    }
+
     public String getAddress() {
         return address;
     }
