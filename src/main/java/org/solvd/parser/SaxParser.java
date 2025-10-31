@@ -20,7 +20,6 @@ public class SaxParser {
             Handler handler = new Handler();
             saxParser.parse(new File("src\\main\\resources\\metro.xml"), handler);
 
-            // შედეგის დაბეჭდვა
             System.out.println("Parsed Trains: " + handler.getTrains());
             System.out.println("Parsed Stations: " + handler.getStations());
             System.out.println("Parsed Passengers: " + handler.getPassengers());
