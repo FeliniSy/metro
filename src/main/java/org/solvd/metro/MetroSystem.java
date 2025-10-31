@@ -1,24 +1,19 @@
 package org.solvd.metro;
 
-import org.solvd.metro.carriage.Carriage;
-import org.solvd.metro.passenger.Passenger;
-import org.solvd.metro.route.Route;
-import org.solvd.metro.schedule.Schedule;
-import org.solvd.metro.station.Station;
-import org.solvd.metro.ticket.Ticket;
-import org.solvd.metro.train.Train;
-import org.solvd.metro.transfer.Transfer;
-
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MetroSystem {
 
     public static void main(String[] args) {
 
-        Carriage c1 = new Carriage(1,20);
-        Carriage c2 = new Carriage(2,25);
-        Carriage c3 = new Carriage(3,30);
+        Staff driver1 = new Staff("David", Staff.State.DRIVER);
+
+        Carriage c1 = new Carriage(1,20,"1st Class");
+        Carriage c2 = new Carriage(2,25,"2nd Class");
+        Carriage c3 = new Carriage(3,30,"3rd Class");
 
         Station a = new Station(1,"rioni", "Kutaisi");
         Station b = new Station(2,"Kutaisi railway", "Kutaisi");
@@ -30,8 +25,10 @@ public class MetroSystem {
         p1.getTicket(Ticket.ONETIME);
 
         Train t1 = new Train(404);
-        t1.addCarriage(c1);
-        t1.addCarriage(c3);
+        List<Carriage> carriages = new ArrayList<>();
+        carriages.add(c1);
+        carriages.add(c3);
+        t1.setCarriages(carriages);
 
         Route kutaisi_tbilisi = new Route();
         kutaisi_tbilisi.addStation(a);
@@ -50,7 +47,7 @@ public class MetroSystem {
                 kutaisi_tbilisi
         );
 
-        Transfer transfer1 = new Transfer(p1, schedule1);
+        Transfer transfer1 = new Transfer(driver1,p1, schedule1);
         transfer1.makeTransfer();
     }
 }

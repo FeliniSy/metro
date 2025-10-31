@@ -1,6 +1,4 @@
-package org.solvd.metro.route;
-
-import org.solvd.metro.station.Station;
+package org.solvd.metro;
 
 import java.util.LinkedList;
 

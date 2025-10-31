@@ -1,10 +1,5 @@
-package org.solvd.metro.parser;
+package org.solvd.metro;
 
-import org.solvd.metro.carriage.Carriage;
-import org.solvd.metro.passenger.Passenger;
-import org.solvd.metro.station.Station;
-import org.solvd.metro.ticket.Ticket;
-import org.solvd.metro.train.Train;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -18,6 +13,7 @@ public class Handler extends DefaultHandler {
     private List<Passenger> passengers = new ArrayList<>();
 
     private Train currentTrain;
+    private List<Carriage> currentCarriages;
     private Carriage currentCarriage;
     private Passenger currentPassenger;
 
@@ -30,19 +26,20 @@ public class Handler extends DefaultHandler {
         switch (qName) {
             case "Train":
                 currentTrain = new Train(Integer.parseInt(attributes.getValue("number")));
+                currentCarriages = new ArrayList<>();
                 break;
 
             case "Carriage":
                 int id = Integer.parseInt(attributes.getValue("id"));
-                currentCarriage = new Carriage(id, 0);
+                currentCarriage = new Carriage(id, 0, "2nd Class");
                 break;
 
             case "Seats":
                 int quantity = Integer.parseInt(attributes.getValue("quantity"));
                 String type = attributes.getValue("type");
-                currentCarriage = new Carriage(currentCarriage.getId(), quantity);
+                currentCarriage = new Carriage(currentCarriage.getId(), quantity, type);
                 for (int i = 1; i <= quantity; i++) {
-                    currentCarriage.changeSeatName(i, type);
+                    currentCarriage.changeSeatType(2, "2nd Class");
                 }
                 break;
 
@@ -72,10 +69,11 @@ public class Handler extends DefaultHandler {
     public void endElement(String uri, String localName, String qName) throws SAXException {
         switch (qName) {
             case "Carriage":
-                currentTrain.addCarriage(currentCarriage);
+                currentCarriages.add(currentCarriage);
                 break;
 
             case "Train":
+                currentTrain.setCarriages(currentCarriages);
                 trains.add(currentTrain);
                 break;
 

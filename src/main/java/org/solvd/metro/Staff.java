@@ -1,8 +1,8 @@
-package org.solvd.metro.stuff;
+package org.solvd.metro;
 
-public class Stuff {
+public class Staff {
 
-    private enum State {
+    protected enum State {
         DRIVER,
         INSTRUCTOR,
         CASHIER,
@@ -14,7 +14,7 @@ public class Stuff {
     private String name;
     private State state;
 
-    public Stuff(String name, State state) {
+    public Staff(String name, State state) {
         this.name = name;
         this.state = state;
     }

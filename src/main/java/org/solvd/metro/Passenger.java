@@ -1,7 +1,4 @@
-package org.solvd.metro.passenger;
-
-import org.solvd.metro.station.Station;
-import org.solvd.metro.ticket.Ticket;
+package org.solvd.metro;
 
 public class Passenger {
 

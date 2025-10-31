@@ -1,4 +1,4 @@
-package org.solvd.metro.parser;
+package org.solvd.metro;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;

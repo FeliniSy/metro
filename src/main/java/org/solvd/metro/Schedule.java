@@ -1,8 +1,4 @@
-package org.solvd.metro.schedule;
-
-import org.solvd.metro.route.Route;
-import org.solvd.metro.station.Station;
-import org.solvd.metro.train.Train;
+package org.solvd.metro;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -27,10 +23,6 @@ public class Schedule {
         this.duration = duration;
         this.train = train;
         this.route = route;
-    }
-
-    public int getTrain() {
-        return train.getNumber();
     }
 
     public Route getRoute() {

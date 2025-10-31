@@ -1,4 +1,4 @@
-package org.solvd.metro.station;
+package org.solvd.metro;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,5 +30,13 @@ public class Station {
 
     public String getAddress() {
         return address;
+    }
+
+    public List<Station> getNeighbors() {
+        return neighbors;
+    }
+
+    public void setNeighbors(List<Station> neighbors) {
+        this.neighbors = neighbors;
     }
 }

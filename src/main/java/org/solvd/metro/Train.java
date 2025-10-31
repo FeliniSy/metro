@@ -1,6 +1,4 @@
-package org.solvd.metro.train;
-
-import org.solvd.metro.carriage.Carriage;
+package org.solvd.metro;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,13 +13,6 @@ public class Train {
         this.carriages = new ArrayList<Carriage>();
     }
 
-    public int getNumber() {
-        return number;
-    }
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
     @Override
     public String toString() {
         return "Train{" +
@@ -30,7 +21,12 @@ public class Train {
                 '}';
     }
 
-    public void addCarriage(Carriage carriage) {
-        this.carriages.add(carriage);
+
+    public void setCarriages(List<Carriage> carriages) {
+        this.carriages = carriages;
+    }
+
+    public List<Carriage> getCarriages() {
+        return carriages;
     }
 }
