@@ -1,16 +1,18 @@
-package org.solvd.schedule;
+package org.solvd.metro.schedule;
 
-import org.solvd.route.Route;
-import org.solvd.station.Station;
-import org.solvd.train.Train;
+import org.solvd.metro.route.Route;
+import org.solvd.metro.station.Station;
+import org.solvd.metro.train.Train;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class Schedule {
 
-    private LocalDateTime startTime, endTime;
-    private Station startStation, endStation;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private Station startStation;
+    private Station endStation;
     private Duration duration;
     private Train train;
     private Route route;

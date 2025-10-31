@@ -1,4 +1,4 @@
-package org.solvd.station;
+package org.solvd.metro.station;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Station {
     private String address;
     private String city;
 
-    List<Station> neighbors;
+    private List<Station> neighbors;
 
     public Station(int id, String address, String city) {
         this.id = id;

@@ -1,13 +1,13 @@
-package org.solvd.metroSystem;
+package org.solvd.metro;
 
-import org.solvd.carriage.Carriage;
-import org.solvd.passenger.Passenger;
-import org.solvd.route.Route;
-import org.solvd.schedule.Schedule;
-import org.solvd.station.Station;
-import org.solvd.ticket.Ticket;
-import org.solvd.train.Train;
-import org.solvd.transfer.Transfer;
+import org.solvd.metro.carriage.Carriage;
+import org.solvd.metro.passenger.Passenger;
+import org.solvd.metro.route.Route;
+import org.solvd.metro.schedule.Schedule;
+import org.solvd.metro.station.Station;
+import org.solvd.metro.ticket.Ticket;
+import org.solvd.metro.train.Train;
+import org.solvd.metro.transfer.Transfer;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

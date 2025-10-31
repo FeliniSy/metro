@@ -1,4 +1,4 @@
-package org.solvd.carriage;
+package org.solvd.metro.carriage;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,8 +8,8 @@ import java.util.Map;
 public class Carriage {
 
     private final int id;
-    List<Integer> quantityOfSeats;
-    Map<Integer, String> seats;
+    private List<Integer> quantityOfSeats;
+    private Map<Integer, String> seats;
 
     List<Integer> reservedSeats;
 

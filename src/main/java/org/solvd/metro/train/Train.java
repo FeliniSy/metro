@@ -1,6 +1,6 @@
-package org.solvd.train;
+package org.solvd.metro.train;
 
-import org.solvd.carriage.Carriage;
+import org.solvd.metro.carriage.Carriage;
 
 import java.util.ArrayList;
 import java.util.List;

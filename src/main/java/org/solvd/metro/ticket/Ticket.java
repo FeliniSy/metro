@@ -1,4 +1,4 @@
-    package org.solvd.ticket;
+    package org.solvd.metro.ticket;
     
     public enum Ticket {
 

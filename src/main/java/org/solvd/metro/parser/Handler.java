@@ -1,10 +1,10 @@
-package org.solvd.parser;
+package org.solvd.metro.parser;
 
-import org.solvd.carriage.Carriage;
-import org.solvd.passenger.Passenger;
-import org.solvd.station.Station;
-import org.solvd.ticket.Ticket;
-import org.solvd.train.Train;
+import org.solvd.metro.carriage.Carriage;
+import org.solvd.metro.passenger.Passenger;
+import org.solvd.metro.station.Station;
+import org.solvd.metro.ticket.Ticket;
+import org.solvd.metro.train.Train;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -110,7 +110,15 @@ public class Handler extends DefaultHandler {
         }
     }
 
-    public List<Train> getTrains() { return trains; }
-    public List<Station> getStations() { return stations; }
-    public List<Passenger> getPassengers() { return passengers; }
+    public List<Train> getTrains() {
+        return trains;
+    }
+
+    public List<Station> getStations() {
+        return stations;
+    }
+
+    public List<Passenger> getPassengers() {
+        return passengers;
+    }
 }

@@ -1,12 +1,12 @@
-package org.solvd.route;
+package org.solvd.metro.route;
 
-import org.solvd.station.Station;
+import org.solvd.metro.station.Station;
 
 import java.util.LinkedList;
 
 public class Route {
 
-    LinkedList<Station> stations;
+    private LinkedList<Station> stations;
 
     public Route(){
         stations = new LinkedList<>();

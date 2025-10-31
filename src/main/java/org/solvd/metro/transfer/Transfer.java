@@ -1,13 +1,13 @@
-package org.solvd.transfer;
+package org.solvd.metro.transfer;
 
-import org.solvd.passenger.Passenger;
-import org.solvd.schedule.Schedule;
-import org.solvd.station.Station;
+import org.solvd.metro.passenger.Passenger;
+import org.solvd.metro.schedule.Schedule;
+import org.solvd.metro.station.Station;
 
 public class Transfer {
 
-    Schedule schedule;
-    Passenger passenger;
+    private Schedule schedule;
+    private Passenger passenger;
 
     public Transfer(Passenger passenger, Schedule schedule) {
         this.passenger = passenger;

@@ -1,4 +1,4 @@
-package org.solvd.stuff;
+package org.solvd.metro.stuff;
 
 public class Stuff {
 

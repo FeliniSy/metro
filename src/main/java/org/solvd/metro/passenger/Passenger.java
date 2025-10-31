@@ -1,14 +1,14 @@
-package org.solvd.passenger;
+package org.solvd.metro.passenger;
 
-import org.solvd.station.Station;
-import org.solvd.ticket.Ticket;
+import org.solvd.metro.station.Station;
+import org.solvd.metro.ticket.Ticket;
 
 public class Passenger {
 
     private int passengerId;
     private boolean hasticket;
 
-    Station fromStation, toStation;
+    private Station fromStation, toStation;
 
     public Passenger(int passengerId, Station fromStation, Station toStation) {
         this.passengerId = passengerId;
