@@ -1,6 +1,7 @@
     package org.solvd.ticket;
     
     public enum Ticket {
+
         ONETIME(1),
         WEEKLY(5),
         MONTHLY(20),

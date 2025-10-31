@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Station {
+
     private int id;
     private String address;
     private String city;

@@ -6,7 +6,6 @@ import org.solvd.train.Train;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.LinkedList;
 
 public class Schedule {
 
